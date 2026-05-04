@@ -14,8 +14,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <style>
+    /* small override to align icons nicely */
+    .skill-icon i, .float-icon i, .contact-link-icon i, .design-img-placeholder i {
+      font-size: inherit;
+    }
+    .btn i, .form-submit i {
+      margin-right: 4px;
+    }
+    .design-img-placeholder i {
+      font-size: 3rem;
+      color: rgba(0,0,0,0.3);
+    }
+    .soft-tag i {
+      margin-right: 6px;
+    }
+    .about-info-item i {
+      margin-right: 8px;
+      color: var(--accent-coral);
+    }
+    .stat-icon i {
+      font-size: 1.2rem;
+      color: var(--accent-teal);
+    }
+  </style>
 </head>
 <body>
 
@@ -26,13 +56,13 @@
   <!-- Mobile Nav Overlay -->
   <nav class="mobile-nav">
     <button class="mobile-nav-close" aria-label="Close menu">✕</button>
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#design-work">Design</a>
-    <a href="#contact">Contact</a>
+    <a href="#hero"><i class="fas fa-home"></i> Home</a>
+    <a href="#about"><i class="fas fa-user"></i> About</a>
+    <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
+    <a href="#design-work"><i class="fas fa-palette"></i> Design</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
   </nav>
 
   <!-- ========================
@@ -43,12 +73,12 @@
       <div class="nav-inner">
         <a href="#hero" class="nav-logo">R<span>.</span>Purba</a>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#design-work">Design</a></li>
-          <li><a href="#contact" class="nav-cta">Hire Me ↗</a></li>
+          <li><a href="#about"><i class="fas fa-user-astronaut"></i> About</a></li>
+          <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="#design-work"><i class="fas fa-palette"></i> Design</a></li>
+          <li><a href="#contact" class="nav-cta"><i class="fas fa-paper-plane"></i> Hire Me ↗</a></li>
         </ul>
         <button class="hamburger" aria-label="Open menu">
           <span></span><span></span><span></span>
@@ -72,7 +102,7 @@
         <div class="hero-content">
           <div class="hero-tag">
             <span class="dot"></span>
-            Available for Work
+            <i class="fas fa-briefcase-clock" style="margin-right: 6px;"></i> Available for Work
           </div>
 
           <h1 class="hero-name">
@@ -82,7 +112,7 @@
 
           <div class="hero-role">
             <span id="typed-role">Frontend Developer</span>
-            <span class="hero-role-badge">& UI/UX</span>
+            <span class="hero-role-badge"><i class="fas fa-paintbrush-pencil"></i> UI/UX</span>
           </div>
 
           <p class="hero-desc">
@@ -91,24 +121,24 @@
 
           <div class="hero-btns">
             <a href="#projects" class="btn btn-primary">
-              View My Work
+              <i class="fas fa-arrow-right"></i> View My Work
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+            <a href="#contact" class="btn btn-outline"><i class="fas fa-comment-dots"></i> Let's Talk</a>
           </div>
 
           <div class="hero-stats">
             <div class="stat-item">
               <div class="stat-num"><span class="counter" data-target="4" data-suffix="+">0+</span></div>
-              <div class="stat-label">Projects Built</div>
+              <div class="stat-label"><i class="fas fa-laptop-code"></i> Projects Built</div>
             </div>
             <div class="stat-item">
               <div class="stat-num"><span class="counter" data-target="1" data-suffix="yr">0yr</span></div>
-              <div class="stat-label">Experience</div>
+              <div class="stat-label"><i class="fas fa-calendar-alt"></i> Experience</div>
             </div>
             <div class="stat-item">
               <div class="stat-num"><span class="counter" data-target="347" data-suffix="">0</span><span style="font-family:var(--font-display);font-weight:800;font-size:1.8rem">/400</span></div>
-              <div class="stat-label">GPA Score</div>
+              <div class="stat-label"><i class="fas fa-graduation-cap"></i> GPA Score</div>
             </div>
           </div>
         </div>
@@ -119,20 +149,20 @@
             <div class="hero-img-bg"></div>
             <!-- Replace src with profile-img.jpg when available -->
             <div class="hero-img-placeholder">
-              <div class="avatar-icon">👤</div>
+              <div class="avatar-icon"><i class="fas fa-user-circle fa-4x"></i></div>
               <span>profile-img.jpg</span>
             </div>
 
             <!-- Floating cards -->
             <div class="hero-float-card">
-              <div class="float-icon teal">🎨</div>
+              <div class="float-icon teal"><i class="fas fa-pen-fancy"></i></div>
               <div>
                 <div class="float-label">Tools</div>
                 <div class="float-value">Figma & Adobe</div>
               </div>
             </div>
             <div class="hero-float-card">
-              <div class="float-icon coral">⚡</div>
+              <div class="float-icon coral"><i class="fab fa-react"></i></div>
               <div>
                 <div class="float-label">Framework</div>
                 <div class="float-value">React.js</div>
@@ -171,19 +201,19 @@
 
           <div class="about-info-grid">
             <div class="about-info-item">
-              <div class="about-info-label">Location</div>
+              <div class="about-info-label"><i class="fas fa-map-marker-alt"></i> Location</div>
               <div class="about-info-value">Indonesia 🇮🇩</div>
             </div>
             <div class="about-info-item">
-              <div class="about-info-label">Status</div>
+              <div class="about-info-label"><i class="fas fa-check-circle"></i> Status</div>
               <div class="about-info-value">Open to Work ✅</div>
             </div>
             <div class="about-info-item">
-              <div class="about-info-label">Languages</div>
+              <div class="about-info-label"><i class="fas fa-language"></i> Languages</div>
               <div class="about-info-value">ID / EN</div>
             </div>
             <div class="about-info-item">
-              <div class="about-info-label">Focus</div>
+              <div class="about-info-label"><i class="fas fa-bullseye"></i> Focus</div>
               <div class="about-info-value">Frontend & UI/UX</div>
             </div>
           </div>
@@ -193,29 +223,29 @@
         <div class="fade-up">
           <span class="section-tag">// education</span>
           <div class="edu-card" style="margin-top:12px;">
-            <span class="edu-badge">2022 — 2025</span>
-            <div class="edu-school">Telkom University</div>
+            <span class="edu-badge"><i class="fas fa-calendar-alt"></i> 2022 — 2025</span>
+            <div class="edu-school"><i class="fas fa-university"></i> Telkom University</div>
             <div class="edu-degree">Diploma in Application Software Engineering</div>
-            <div class="edu-period">📍 Bandung, Indonesia</div>
+            <div class="edu-period"><i class="fas fa-map-pin"></i> Bandung, Indonesia</div>
             <div class="edu-gpa">
               <div class="gpa-bar-wrap">
                 <div class="gpa-bar"></div>
               </div>
-              <div class="gpa-num">3.47</div>
+              <div class="gpa-num"><i class="fas fa-star-of-life"></i> 3.47</div>
             </div>
           </div>
 
           <!-- Achievements -->
           <div style="margin-top:24px; display:flex; flex-direction:column; gap:12px;">
             <div style="background:white;border-radius:var(--radius-md);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;align-items:center;gap:14px;" class="fade-up">
-              <span style="font-size:1.5rem;">🏆</span>
+              <span style="font-size:1.5rem;"><i class="fas fa-trophy"></i></span>
               <div>
                 <div style="font-family:var(--font-display);font-weight:700;font-size:0.9rem;">Semifinalist — I/O Web Dev Festival</div>
                 <div style="font-size:0.78rem;color:var(--ink-muted);font-family:var(--font-mono);">Tarumanagara University · May 2024</div>
               </div>
             </div>
             <div style="background:white;border-radius:var(--radius-md);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;align-items:center;gap:14px;" class="fade-up">
-              <span style="font-size:1.5rem;">🎖️</span>
+              <span style="font-size:1.5rem;"><i class="fas fa-medal"></i></span>
               <div>
                 <div style="font-family:var(--font-display);font-weight:700;font-size:0.9rem;">Indonesian Vocational Olympics OLIVIA</div>
                 <div style="font-size:0.78rem;color:var(--ink-muted);font-family:var(--font-mono);">Sebelas Maret University · Nov 2023</div>
@@ -241,7 +271,7 @@
 
       <div class="skills-grid">
         <div class="skill-card fade-up">
-          <div class="skill-icon">💻</div>
+          <div class="skill-icon"><i class="fas fa-laptop-code fa-2x"></i></div>
           <div class="skill-card-title">Frontend Development</div>
           <div class="skill-tags">
             <span class="skill-tag">HTML5</span>
@@ -254,7 +284,7 @@
         </div>
 
         <div class="skill-card fade-up">
-          <div class="skill-icon">🎨</div>
+          <div class="skill-icon"><i class="fas fa-palette fa-2x"></i></div>
           <div class="skill-card-title">Design & Prototyping</div>
           <div class="skill-tags">
             <span class="skill-tag">Figma</span>
@@ -266,7 +296,7 @@
         </div>
 
         <div class="skill-card fade-up">
-          <div class="skill-icon">🔧</div>
+          <div class="skill-icon"><i class="fas fa-tools fa-2x"></i></div>
           <div class="skill-card-title">Dev Tools & CMS</div>
           <div class="skill-tags">
             <span class="skill-tag">Git & GitHub</span>
@@ -278,7 +308,7 @@
         </div>
 
         <div class="skill-card fade-up">
-          <div class="skill-icon">📊</div>
+          <div class="skill-icon"><i class="fas fa-chart-line fa-2x"></i></div>
           <div class="skill-card-title">Data & Operations</div>
           <div class="skill-tags">
             <span class="skill-tag">Google Sheets</span>
@@ -291,16 +321,16 @@
       </div>
 
       <div class="soft-skills-section fade-up">
-        <div class="soft-skills-label">Soft <span>Skills</span></div>
+        <div class="soft-skills-label"><i class="fas fa-hand-peace"></i> Soft <span>Skills</span></div>
         <div class="soft-tags">
-          <span class="soft-tag">✦ Effective Communication</span>
-          <span class="soft-tag">✦ Team Collaboration</span>
-          <span class="soft-tag">✦ Problem-Solving</span>
-          <span class="soft-tag">✦ User Empathy</span>
-          <span class="soft-tag">✦ Critical Thinking</span>
-          <span class="soft-tag">✦ Time Management</span>
-          <span class="soft-tag">✦ Adaptability</span>
-          <span class="soft-tag">✦ Attention to Detail</span>
+          <span class="soft-tag"><i class="fas fa-comment-dots"></i> Effective Communication</span>
+          <span class="soft-tag"><i class="fas fa-users"></i> Team Collaboration</span>
+          <span class="soft-tag"><i class="fas fa-brain"></i> Problem-Solving</span>
+          <span class="soft-tag"><i class="fas fa-heart"></i> User Empathy</span>
+          <span class="soft-tag"><i class="fas fa-lightbulb"></i> Critical Thinking</span>
+          <span class="soft-tag"><i class="fas fa-clock"></i> Time Management</span>
+          <span class="soft-tag"><i class="fas fa-sync-alt"></i> Adaptability</span>
+          <span class="soft-tag"><i class="fas fa-search"></i> Attention to Detail</span>
         </div>
       </div>
     </div>
@@ -315,7 +345,7 @@
 
         <!-- Sidebar -->
         <div class="experience-sidebar fade-up">
-          <div class="exp-sidebar-label">// work experience</div>
+          <div class="exp-sidebar-label"><i class="fas fa-briefcase"></i> // work experience</div>
           <h2 class="exp-sidebar-title">Where I've <span class="highlight-coral">Worked</span></h2>
           <p class="exp-sidebar-desc">Hands-on experience across frontend development, data management, and creative operations.</p>
         </div>
@@ -326,11 +356,11 @@
           <div class="exp-card fade-up">
             <div class="exp-card-accent"></div>
             <div class="exp-top">
-              <div class="exp-company">BBPVP Bekasi</div>
-              <span class="exp-period">Nov 2025 — Mei 2026</span>
+              <div class="exp-company"><i class="fas fa-building"></i> BBPVP Bekasi</div>
+              <span class="exp-period"><i class="far fa-calendar-alt"></i> Nov 2025 — Mei 2026</span>
             </div>
             <div class="exp-role">Intern — Data & Information</div>
-            <div class="exp-location">📍 Bekasi, Indonesia</div>
+            <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Bekasi, Indonesia</div>
             <ul class="exp-bullets">
               <li class="exp-bullet">Managed and processed employee data including attendance, WFA, leave, and SKP records using Google Sheets.</li>
               <li class="exp-bullet">Developed and improved spreadsheet systems for tukin calculation, attendance delay, and timestamp automation.</li>
@@ -343,11 +373,11 @@
           <div class="exp-card fade-up">
             <div class="exp-card-accent"></div>
             <div class="exp-top">
-              <div class="exp-company">Directorate of IT Center</div>
-              <span class="exp-period">Jul 2024 — Jun 2025</span>
+              <div class="exp-company"><i class="fas fa-desktop"></i> Directorate of IT Center</div>
+              <span class="exp-period"><i class="far fa-calendar-alt"></i> Jul 2024 — Jun 2025</span>
             </div>
             <div class="exp-role">Intern — Frontend Developer</div>
-            <div class="exp-location">📍 Telkom University, Bandung</div>
+            <div class="exp-location"><i class="fas fa-map-marker-alt"></i> Telkom University, Bandung</div>
             <ul class="exp-bullets">
               <li class="exp-bullet">Developed and maintained responsive web interfaces for internal campus systems using React.js, HTML, CSS, and JavaScript.</li>
               <li class="exp-bullet">Created plugins to enhance internal system functionality, streamlining campus operational processes.</li>
@@ -368,7 +398,7 @@
     <div class="container">
       <div class="projects-header">
         <div class="fade-up">
-          <span class="section-tag">// project portfolio</span>
+          <span class="section-tag"><i class="fas fa-folder-open"></i> // project portfolio</span>
           <h2 class="section-title">Things I've <span class="highlight-teal">Built</span></h2>
         </div>
         <div class="projects-count fade-up">04</div>
@@ -379,19 +409,18 @@
         <!-- Project 1: Featured -->
         <div class="project-card fade-up">
           <div class="project-img-wrap">
-            <!-- Unsplash placeholder: tourism/nature -->
             <img
               src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=800&q=80"
               alt="Wisata Kotabaru project screenshot"
               loading="lazy"
             />
             <div class="project-img-overlay">
-              <span class="project-view-btn">View Project ↗</span>
+              <span class="project-view-btn">View Project <i class="fas fa-external-link-alt"></i></span>
             </div>
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span class="project-category">Web Development</span>
+              <span class="project-category"><i class="fas fa-globe"></i> Web Development</span>
               <div class="project-tools">
                 <span class="project-tool-tag">HTML</span>
                 <span class="project-tool-tag">CSS</span>
@@ -405,19 +434,18 @@
         <!-- Project 2 -->
         <div class="project-card fade-up">
           <div class="project-img-wrap">
-            <!-- Unsplash placeholder: e-commerce/shopping -->
             <img
               src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80"
               alt="Sipaling Shop e-commerce screenshot"
               loading="lazy"
             />
             <div class="project-img-overlay">
-              <span class="project-view-btn">View Project ↗</span>
+              <span class="project-view-btn">View Project <i class="fas fa-external-link-alt"></i></span>
             </div>
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span class="project-category">E-commerce UI</span>
+              <span class="project-category"><i class="fas fa-shopping-cart"></i> E-commerce UI</span>
               <div class="project-tools">
                 <span class="project-tool-tag">HTML</span>
                 <span class="project-tool-tag">CSS</span>
@@ -431,19 +459,18 @@
         <!-- Project 3 -->
         <div class="project-card fade-up">
           <div class="project-img-wrap">
-            <!-- Unsplash placeholder: mobile/app -->
             <img
               src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80"
               alt="Simply Laundry mobile app screenshot"
               loading="lazy"
             />
             <div class="project-img-overlay">
-              <span class="project-view-btn">View Project ↗</span>
+              <span class="project-view-btn">View Project <i class="fas fa-external-link-alt"></i></span>
             </div>
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span class="project-category">Android App</span>
+              <span class="project-category"><i class="fab fa-android"></i> Android App</span>
               <div class="project-tools">
                 <span class="project-tool-tag">Java</span>
                 <span class="project-tool-tag">XML</span>
@@ -457,19 +484,18 @@
         <!-- Project 4 -->
         <div class="project-card fade-up">
           <div class="project-img-wrap">
-            <!-- Unsplash placeholder: WordPress/tech -->
             <img
               src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
               alt="Network Site Details WordPress plugin"
               loading="lazy"
             />
             <div class="project-img-overlay">
-              <span class="project-view-btn">View Project ↗</span>
+              <span class="project-view-btn">View Project <i class="fas fa-external-link-alt"></i></span>
             </div>
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span class="project-category">WordPress Plugin</span>
+              <span class="project-category"><i class="fab fa-wordpress"></i> WordPress Plugin</span>
               <div class="project-tools">
                 <span class="project-tool-tag">PHP</span>
                 <span class="project-tool-tag">MySQL</span>
@@ -490,21 +516,20 @@
   <section id="design-work">
     <div class="container">
       <div class="design-header fade-up">
-        <span class="section-tag">// creative work</span>
+        <span class="section-tag"><i class="fas fa-palette"></i> // creative work</span>
         <h2 class="section-title">Design &amp; <span class="highlight-yellow">Creative</span></h2>
       </div>
 
       <div class="design-tabs fade-up">
-        <button class="design-tab active">All Work</button>
-        <button class="design-tab">Poster Design</button>
-        <button class="design-tab">Social Media</button>
+        <button class="design-tab active"><i class="fas fa-th-large"></i> All Work</button>
+        <button class="design-tab"><i class="fas fa-poster"></i> Poster Design</button>
+        <button class="design-tab"><i class="fas fa-hashtag"></i> Social Media</button>
       </div>
 
       <!-- Poster Design Grid -->
       <div class="design-grid" style="margin-bottom:24px;">
         <div class="design-item">
           <div class="design-img-placeholder">
-            <!-- Replace with actual poster images -->
             <img
               src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=800&q=80"
               alt="Poster design sample"
@@ -513,7 +538,7 @@
             />
           </div>
           <div class="design-overlay">
-            <span class="design-caption">Event Poster — FESTRA Sumatera</span>
+            <span class="design-caption"><i class="fas fa-image"></i> Event Poster — FESTRA Sumatera</span>
           </div>
         </div>
 
@@ -527,7 +552,7 @@
             />
           </div>
           <div class="design-overlay">
-            <span class="design-caption">Social Media — KBSU Telkom</span>
+            <span class="design-caption"><i class="fab fa-instagram"></i> Social Media — KBSU Telkom</span>
           </div>
         </div>
 
@@ -541,7 +566,7 @@
             />
           </div>
           <div class="design-overlay">
-            <span class="design-caption">Content — ONNOSU 2025</span>
+            <span class="design-caption"><i class="fas fa-hashtag"></i> Content — ONNOSU 2025</span>
           </div>
         </div>
 
@@ -555,7 +580,7 @@
             />
           </div>
           <div class="design-overlay">
-            <span class="design-caption">Poster — KBSU Day</span>
+            <span class="design-caption"><i class="fas fa-calendar-day"></i> Poster — KBSU Day</span>
           </div>
         </div>
 
@@ -569,7 +594,7 @@
             />
           </div>
           <div class="design-overlay">
-            <span class="design-caption">Poster — Fun Match Futsal</span>
+            <span class="design-caption"><i class="fas fa-futbol"></i> Poster — Fun Match Futsal</span>
           </div>
         </div>
 
@@ -583,13 +608,13 @@
             />
           </div>
           <div class="design-overlay">
-            <span class="design-caption">Poster — Open Registration</span>
+            <span class="design-caption"><i class="fas fa-envelope-open-text"></i> Poster — Open Registration</span>
           </div>
         </div>
       </div>
 
       <p style="text-align:center;color:rgba(255,255,255,0.4);font-family:var(--font-mono);font-size:0.8rem;margin-top:16px;" class="fade-up">
-        📌 These are placeholder images — replace with actual design work from the portfolio PDF
+        <i class="fas fa-info-circle"></i> 📌 These are placeholder images — replace with actual design work from the portfolio PDF
       </p>
     </div>
   </section>
@@ -603,7 +628,7 @@
 
         <!-- Left: Info -->
         <div class="fade-up">
-          <span class="section-tag">// let's connect</span>
+          <span class="section-tag"><i class="fas fa-paper-plane"></i> // let's connect</span>
           <h2 class="section-title">Got a <span class="highlight-coral">Project</span> in Mind?</h2>
           <p class="contact-intro">
             I'm currently open to new opportunities — whether it's a full-time role, internship, or freelance project. Let's create something great together!
@@ -611,28 +636,28 @@
 
           <div class="contact-links">
             <a href="mailto:rihansen.ulihdo11@gmail.com" class="contact-link-item">
-              <div class="contact-link-icon coral">✉️</div>
+              <div class="contact-link-icon coral"><i class="fas fa-envelope"></i></div>
               <div>
                 <div class="contact-link-label">Email</div>
                 <div class="contact-link-value">rihansen.ulihdo11@gmail.com</div>
               </div>
             </a>
             <a href="https://www.linkedin.com/in/rihansen-purba" target="_blank" class="contact-link-item">
-              <div class="contact-link-icon blue">💼</div>
+              <div class="contact-link-icon blue"><i class="fab fa-linkedin-in"></i></div>
               <div>
                 <div class="contact-link-label">LinkedIn</div>
                 <div class="contact-link-value">linkedin.com/in/rihansen-purba</div>
               </div>
             </a>
             <a href="https://github.com/rihansen11" target="_blank" class="contact-link-item">
-              <div class="contact-link-icon ink">🐙</div>
+              <div class="contact-link-icon ink"><i class="fab fa-github"></i></div>
               <div>
                 <div class="contact-link-label">GitHub</div>
                 <div class="contact-link-value">github.com/rihansen11</div>
               </div>
             </a>
             <a href="https://instagram.com/rihansen_" target="_blank" class="contact-link-item">
-              <div class="contact-link-icon purple">📸</div>
+              <div class="contact-link-icon purple"><i class="fab fa-instagram"></i></div>
               <div>
                 <div class="contact-link-label">Instagram</div>
                 <div class="contact-link-value">@rihansen_</div>
@@ -643,28 +668,28 @@
 
         <!-- Right: Form -->
         <div class="contact-form-wrap fade-up">
-          <div class="form-title">Send a Message</div>
+          <div class="form-title"><i class="fas fa-comment-dots"></i> Send a Message</div>
           <div class="form-subtitle">I'll get back to you within 1–2 business days.</div>
 
           <form id="contact-form">
             <div class="form-group">
-              <label for="name">Your Name</label>
+              <label for="name"><i class="fas fa-user"></i> Your Name</label>
               <input type="text" id="name" name="name" placeholder="John Doe" required />
             </div>
             <div class="form-group">
-              <label for="email">Email Address</label>
+              <label for="email"><i class="fas fa-at"></i> Email Address</label>
               <input type="email" id="email" name="email" placeholder="john@example.com" required />
             </div>
             <div class="form-group">
-              <label for="subject">Subject</label>
+              <label for="subject"><i class="fas fa-tag"></i> Subject</label>
               <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Project Collaboration" />
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
+              <label for="message"><i class="fas fa-pencil-alt"></i> Message</label>
               <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
             </div>
             <button type="submit" class="form-submit">
-              Send Message
+              <i class="fas fa-paper-plane"></i> Send Message
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
             </button>
           </form>
@@ -682,22 +707,28 @@
       <div class="footer-inner">
         <a href="#hero" class="footer-logo">R<span>.</span>Purba</a>
         <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#design-work">Design</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about"><i class="fas fa-user-astronaut"></i> About</a></li>
+          <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+          <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+          <li><a href="#design-work"><i class="fas fa-palette"></i> Design</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
       </div>
       <div class="footer-bottom">
         <p class="footer-copy">© 2025 Rihansen Ulihdo Purba. All rights reserved.</p>
-        <p class="footer-made">Made with <span>♥</span> & clean code</p>
+        <p class="footer-made">Made with <i class="fas fa-heart" style="color: var(--accent-coral);"></i> & clean code</p>
       </div>
     </div>
   </footer>
 
   <!-- JS -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    // ensure counters and every script works with new icons
+    (function continueBehaviour() {
+      // keep original typed logic etc.
+      if (typeof typeRole !== 'undefined') window.typeRole = typeRole; 
+    })();
+  </script>
 </body>
 </html>
